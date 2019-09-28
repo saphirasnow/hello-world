@@ -47,7 +47,7 @@ header {
 main {
   height: 100%;
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 2%;
 }
 
 ul {
@@ -73,7 +73,7 @@ hr {
 
 .column {
   float: left;
-  width: 37%;
+  width: 36%;
 }
 
 /* Clear floats after the columns */
