@@ -1,10 +1,84 @@
-* {
-  margin:0px;
-  padding:0px;
+html, body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1db4c4;
+  color: #dee2e6;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 120%;
 }
 
 p {
-  text-align: left;
-  font: serif;
-  font-size: 14px;
+  margin-top: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1144d1;
+  font-family: 'Lobster', cursive;
+  margin-bottom:0;
+}
+
+a, a:active, a:focus, a:hover, a:visited {
+  color: #ebfffa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b8d6ce;
+}
+
+div.wrapper {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  height: 700px;
+}
+
+header {
+  height: 100%;
+  float: left;
+  width: 30%;
+  text-align: right;
+  padding-right: 60px;
+}
+
+main {
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+ul {
+  padding-left: 200px;
+  margin-left: 10%
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.logo {
+  width: 180px;
+  height: 216px;
+  display: inline-block;
+  background-size: cover;
+  /*border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 2px solid #F8F7F5;
+  box-shadow: 0 0 0 3px #46433A;*/
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
