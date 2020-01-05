@@ -1,204 +1,88 @@
 <!DOCTYPE html>
 
-<html>
+<html style = "position: relative; overflow: hidden; width: 100%; height: 100%;">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Bella Laybourn</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
+  <link href='https://fonts.googleapis.com/css?family=Quintessential' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <style>
+    p {
+      /*text-align: justify;*/
+      width: 100%;
+      line-height: 1.4;
+    }
+    h3 {
+      font-family: 'Varela';
+    }
+  </style>
 </head>
 
-<body>
-  <div class = "wrapper">
-    <header>
+<body style = "background-color: #000000; color: #322332; overflow: scroll; height: 100%; margin: 0;">
+  <div style = "margin: auto;">
+    <img src = "images/flame2.png" style = "padding: 0; margin: auto; max-width: 10%; float: left;"></img>
+  </div>
+  <div class = "wrapper" style = "background-color: #859cbc/*6D8EDE*/; width: 80%; margin-right: 30%; overflow-y: hidden;">
+    <nav class = "navbar navbar-expand-sm navbar-dark" style = "background-color: #0F0F0F;">
+      <a class = "selflogo" style = "color: #FEFEFE">Bella Laybourn </a>
+      <button class="navbar-toggler" type = "button" data-toggle = "collapse" data-target = ".navbar-collapse">
+        <span class = "navbar-toggler-icon"></span>
+      </button>
+      <div class = "collapse navbar-collapse justify-content-end" id = "collapsibleNavbar">
+        <ul class = "navbar-nav">
+          <li>
+            <a class = "nav-link" style = "color: #F6D859;">About Me</a>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link" href = "./experience.html">Experience</a>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link" href = "./projects.html">Projects</a>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link" href = "./coursework.html">Coursework</a>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link" href = "./contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header style = "max-width: 30%; padding-right: 3%; padding-top: 2%; float: right;">
       <div class = "spacer"></div>
-      <div><a class = "avatar" style = "background-image:url('images/LaybournIsabella19.jpg')"></a></div>
-      <div><h1>Bella Laybourn</h1></div>
-      <div>Computer Science undergraduate at</div>
-      <div><p>Carnegie Mellon University</p></div>
-      <a href = "https://github.com/saphirasnow">My Github</a> |
-      <a href = "https://www.linkedin.com/in/bellalaybourn" style = "text-align:right">My LinkedIn</a>
+      <img class = "img-thumbnail" src = "images/LaybournIsabella19.jpg" style = "padding: 0; margin-left: 5%; margin-right: 1%; max-width: 80%; float: right;"></img>
+      <p style="text-align: right; float: right; margin-right: 1%;"><a href = "https://github.com/saphirasnow">My Github</a> |
+      <a href = "https://www.linkedin.com/in/bellalaybourn" style = "text-align:right">My LinkedIn</a></p>
     </header>
-    <main>
+    <main style = "padding-left: 5%; padding-top: 2%; margin-right: 33%;">
       <div id = "content">
         <div class = "spacer"></div>
-        <p style = "margin-bottom: 1%; font-style: italic;">
-          I am studying computer science at Carnegie Mellon University with intention to
+        <p style = "margin-bottom: 2%; /*font-style: italic;*/">
+          Hi, I'm Bella! Right now, I'm studying computer science at Carnegie Mellon University with intention to
           minor in Software Engineering and Animation and Special Effects.
           I love solving problems and taking on challenging new projects in CS.
-          When I’m not doing that, I enjoy video editing as well as reading and writing
+          Outside of my studies, I enjoy video editing as well as reading and writing
           fantasy and science fiction.
         </p>
-        <p style = "margin-bottom: 1%; font-style: italic;">
-          Besides making and programming transitions for my own anime music videos
+        <p style = "margin-bottom: 2%; /*font-style: italic;*/">
+          Besides designing and programming transitions for my own anime music videos
           (<a href = "https://www.youtube.com/channel/UC6a3vYs7gLyVEm4tStzcF1A">AMVs</a>),
           I have edited production videos for the Sitka Fine Arts Camp and taught coding and
           video editing to middle-school students at the Sitka Public Library during past summers.
           My current projects include working on a biometric shirt for patients with Dravet Syndrome
           and a program for achieving chroma key effects using an arbitrary background.
         </p>
-        <p style = "margin-bottom: 1%; font-style: italic;">I can be reached at <a href = "mailto:ilaybour@andrew.cmu.edu">ilaybour@andrew.cmu.edu.</a></p>
-        <h3 style="margin-bottom: 0;"><a href="images/Isabella_Laybourn_Resume.pdf">Resume</a></h3>
-        <h2>Selected Coursework</h2>
-        <div class = "right">
-          <div class = "cmuspacer"></div>
-          <a class = "logo" style = "background-image:url('images/cmulogo.png')"></a>
-          <div class = "cmuspacer"></div>
-        </div>
-        <div class = "left">
-          <h3>Carnegie Mellon University (Current QPA 4.0)</h3>
-          <p><b>Spring 2020 (Current)</b></p>
-          <ul class = "classes">
-            <li>Great Ideas in Theoretical Computer Science</li>
-            <li>Functional Programming</li>
-            <li>Matrices and Linear Algebra</li>
-            <li>Calculus in 3D</li>
-          </ul>
-          <p><b>Fall 2019</b></p>
-          <ul class = "classes">
-            <li>Principles of Imperative Computation</li>
-            <li>Math Foundations for Computer Science</li>
-            <li>Integration and Approximation</li>
-            <li>Great Practical Ideas in Computer Science</li>
-            <li>Introduction to Japanese Language and Culture</li>
-          </ul>
-        </div>
-        <div class = "right">
-          <div class = "stanfordspacer"></div>
-          <a class = "logo" style = "background-image:url('images/stanfordlogo.png')"></a>
-          <div class = "stanfordspacer"></div>
-        </div>
-        <div class = "left">
-          <h3>Stanford Online High School (GPA 3.92/4.0)</h3>
-          <ul class = "classes">
-            <li>AP Computer Science A</li>
-            <li>Data Structures and Algorithms</li>
-            <li>AP Calculus AB</li>
-            <li>Proofs and Problem Solving Techniques</li>
-            <li>Multivariable Calculus</li>
-            <li>Linear Algebra</li>
-            <li>Differential Equations</li>
-            <li>AP Physics C: Mechanics</li>
-            <li>AP Physics C: Electricity & Magnetism</li>
-            <li>UL Physics: Light and Heat</li>
-            <li>UL Physics: Modern Physics</li>
-            <li>AP Chemistry</li>
-            <li>AP Biology</li>
-            <li>AP Literature and Composition</li>
-            <li>AP US History</li>
-          </ul>
-        </div>
-        <h2>Experience</h2>
-        <div>
-          <h3>Data Analysis Intern at <span><a id="evalulogic" style = "background-image:url('images/evalulogiclogo.png')" href = "http://evalulogic.com/"></a></span>(Summer 2019)</h3>
-          <ul class = "experience">
-            <li>
-              Analyzed and designed over 100 Excel graphs sorting and depicting information from 2
-              surveys of high school students regarding usage of and attitudes toward controlled substances
-              (alcohol, tobacco, marijuana, prescription drugs).
-            </li>
-            <li>
-              Formal presentation of the data to client Sitka Counseling at monthly meeting.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Freelance Video Editor at  <span><a id="sfac" style = "background-image:url('images/sfaclogo.png')" href = "https://www.fineartscamp.org/"></a></span>(2018 - 2019)</h3>
-          <ul class = "experience">
-            <li>
-              Edited and finalized production videos (Seussical, Oliver, One Acts 2018, and Peter Pan)
-              for distribution and display on the Fine Arts Camp website using Adobe Premiere Pro
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Volunteer Course Instructor at <a style="font-style: normal;" href = "https://www.cityofsitka.com/government/departments/library/">Sitka Public Library</a> (Summer 2016, 2017, 2018)</h3>
-          <ul class = "experience">
-            <li>
-              Designed and taught week-long workshops in
-              Scratch, MIT App Inventor, Web Development, and Video Editing
-            </li>
-          </ul>
-        </div>
-        <h2>Projects</h2>
-        <h3>With CMU's <a style="font-style: normal;" href="https://www.gamecreation.org/">Game Creation Society</a></h3>
-        <div>
-          <div class = "projleft"><a class = "screenshot" href = "https://www.gamecreation.org/games/game_bytes" style = "background-image:url('images/sporshmallow.png')"></a></div>
-          <div class = "projright">
-            <div class = "sporshspacer"></div>
-            <a href = "https://www.gamecreation.org/games/game_bytes">Sporshmallow</a>, a Smash-like, sports-centric, fighting minigame
-            for Game Creation Society's cabinet
-            <div class = "sporshspacer"></div>
-          </div>
-        </div>
-        <h3>Dravet Shirt</h3>
-        <div class = "projleft">
-          <iframe width="355" height="210" src="https://www.youtube.com/embed/DHsz5xJmUmk"></iframe>
-        </div>
-        <div class = "projright">
-          <ul style = "padding-left: 0; margin-left: 0%; list-style-type: none;">
-            <li>
-              Programmed biometric shirt using LEDs to monitor temperature and activity for a
-              <a href="https://www.dravetfoundation.org/what-is-dravet-syndrome/">Dravet</a> patient.
-            </li>
-            <li>Designed and fabricated working prototypes using Arduino, Adafruit, and Particle IoT boards.</li>
-            <li>Currently testing a feature that writes the gathered temperature/ activity information to a ThingSpeak channel.</li>
-          </ul>
-          <div class = "spacer"></div>
-        </div>
-        <h3>Effects and Transitions <a style="font-style: normal;" href="https://github.com/saphirasnow/EffectsTransitions">(GitHub)</a></h3>
-        <div style = "padding-left: 5%;" class = "projleft">
-          <video width="360" height="140" controls loop>
-            <source src="images/transits2.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class = "projright">
-          <div class = "eftrspacer"></div>
-          2D video transitions and effects created in Java
-          <div class = "eftrspacer"></div>
-        </div>
-        <h3>Animations</h3>
-        <div class = "projleft">
-          <video width="360" height="202" controls loop>
-            <source src="images/pixelanimspot.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class = "projright">
-          <div class = "pixspacer"></div>
-          <p style = "align: left;">
-            <a href = "https://www.youtube.com/watch?v=5eMMu3Nj6ig">Pixel</a>,
-            the Stanford OHS mascot, doing a backflip (2016)
-          </p>
-          <div class = "pixspacer"></div>
-        </div>
-        <div class = "endspacer"></div>
-        <h2>Honors and Awards</h2>
-        <ul>
-          <li>Carnegie Mellon University Dean's List (Fall 2019)</li>
-          <li>Control Award (Alaska State FTC Competition 2019)</li>
-          <li>Technovation Semifinalist (2018)</li>
-          <li>National AP Scholar</li>
-          <li>National Merit Finalist</li>
-          <li>U.S. Presidential Scholar Semifinalist</li>
-          <li>Excellence in English Division Award (Stanford Online High School 2019)</li>
-          <li>
-            Tora-Con <a href="https://www.youtube.com/watch?v=iYjxp_lOWVM">AMV</a>
-            Competition Semifinalist (2018)
-          </li>
-        </ul>
-        <h2>Publications</h2>
-        <p style = "padding-left: 3%;">
-          <i>Transcending Patriarchy: The Construct of Eve and the Feminine in "Paradise Lost"</i>
-          , De Novo 2018
-        </p>
-        <div class = "spacer"></div>
-        <hr>
-        <p style="font-size: 12px;">Website by Bella Laybourn, logos belonging to their respective owners</p>
-        <div class = "spacer"></div>
+        <p style = "margin-bottom: 2%; /*font-style: italic;*/">I can be reached at <a href = "mailto:ilaybour@andrew.cmu.edu">ilaybour@andrew.cmu.edu.</a></p>
+        <h3><a href="images/Isabella_Laybourn_Resume.pdf">Resume</a></h3>
       </div>
-    </div>
     </main>
+    <img src = "images/sitkabacktopONLY.png" style = "padding: 0; margin: auto; max-width: 100%;
+      -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));"></img>
   </div>
 </body>
 </html>
