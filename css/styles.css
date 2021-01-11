@@ -1,0 +1,197 @@
+html, body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #000000;
+  /*color: #dee2e6;*/
+  font-family: 'Georgia', serif;
+  font-size: 100%;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1144d1;
+  font-family: 'Lobster', cursive;
+}
+
+h1, h2, h4, h5, h6 {
+  margin-bottom:0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+a, a:active, a:focus, a:hover, a:visited {
+  color: #FFE474;/*#FFFFFF;/*#ebfffa;*/
+  text-decoration: none;
+  font-style: italic;
+}
+
+a:hover {
+  color: #b8d6ce;
+}
+
+div.wrapper {
+  width: 90%;
+  margin: auto;
+  height: 700px;
+}
+
+div.spacer {
+  height: 20px;
+}
+
+header {
+  border-radius: 25px;
+  color: #dee2e6;
+  height: 60%;
+  float: left;
+  width: 30%;
+  margin-top: 10%;
+  text-align: right;
+  padding-right: 60px;
+}
+
+main {
+  border-radius: 25px;
+  background-color: #6D8EDE;/*#1db4c4;*/
+  color: #dee2e6;
+  height: 90%;
+  margin-left: 10%;
+  margin-right: 2%;
+  overflow-y: scroll;
+  padding-left: 1%;
+  padding-right: 2%;
+}
+
+ul {
+  padding-top: 0;
+  margin-top: 5px;
+}
+
+ul.classes {
+  padding-left: 0px;
+  margin-left: 10%
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.avatar {
+  width: 180px;
+  height: 216px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.logo {
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.screenshot {
+  width: 360px;
+  height: 200px;
+  display: inline-block;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.column {
+  float: left;
+  width: 36%;
+}
+
+div.left {
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  float: left;
+}
+div.right {
+  padding: 0;
+  margin: 0;
+  width: 30%;
+  float: right;
+}
+
+div.projleft {
+  padding-top: 0;
+  padding-left: 5%;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin: 0;
+  width: 57%;
+  float: left;
+}
+div.projright {
+  padding: 0;
+  margin: 0;
+  width: 38%;
+  float: left;
+}
+
+div.gallery {
+  padding-top: 0;
+  padding-left: 5%;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin: 0;
+  width: 25%;
+  float: left;
+}
+
+div.sporshspacer {
+  height: 75px;
+}
+
+div.eftrspacer {
+  height: 60px;
+}
+
+div.cmuspacer {
+  height: 50px;
+}
+
+div.stanfordspacer {
+  height: 80px;
+}
+
+div.pixspacer {
+  height: 80px;
+}
+
+div.endspacer {
+  height: 200px;
+}
+
+#evalulogic {
+  width: 120px;
+  height: 30px;
+  display: inline-block;
+  background-size: cover;
+}
+
+#sfac {
+  width: 82px;
+  height: 30px;
+  display: inline-block;
+  background-size: cover;
+}
+
+p.label {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}

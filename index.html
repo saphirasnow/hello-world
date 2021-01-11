@@ -2,6 +2,7 @@
 
 <html style = "position: relative; overflow: hidden; width: 100%; height: 100%;">
 <head>
+  <link rel="icon" type="image/png" href="images/Butterfly Logo small.png">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Bella Laybourn</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
@@ -12,23 +13,28 @@
   <script src="js/bootstrap.js"></script>
   <style>
     p {
-      /*text-align: justify;*/
       width: 100%;
       line-height: 1.4;
     }
     h3 {
       font-family: 'Varela';
     }
+    a {
+      color: #ffde66;
+    }
+    body, .wrapper {
+      background-color: #000000;
+      color: #e0d1e0;
+    }
   </style>
 </head>
 
-<body style = "background-color: #000000; color: #322332; overflow: scroll; height: 100%; margin: 0;">
+<body style = "overflow-y: hidden; height: 100%; margin: 0; padding-bottom: 5%;">
   <div style = "margin: auto;">
     <img src = "images/flame2.png" style = "padding: 0; margin: auto; max-width: 10%; float: left;"></img>
   </div>
-  <div class = "wrapper" style = "background-color: #859cbc/*6D8EDE*/; width: 80%; margin-right: 30%; overflow-y: hidden;">
-    <nav class = "navbar navbar-expand-sm navbar-dark" style = "background-color: #0F0F0F;">
-      <a class = "selflogo" style = "color: #FEFEFE">Bella Laybourn </a>
+  <nav class = "navbar navbar-expand-sm navbar-dark" style = "background-color: #000/*#0F0F0F*/; width: 80%; margin-left: 10%;">
+    <a href = "index.html"><img src="images/Inverted Clear Bella Logo small.png" style="width: 100px;"></img></a>
       <button class="navbar-toggler" type = "button" data-toggle = "collapse" data-target = ".navbar-collapse">
         <span class = "navbar-toggler-icon"></span>
       </button>
@@ -52,37 +58,44 @@
         </ul>
       </div>
     </nav>
-    <header style = "max-width: 30%; padding-right: 3%; padding-top: 2%; float: right;">
-      <div class = "spacer"></div>
-      <img class = "img-thumbnail" src = "images/LaybournIsabella19.jpg" style = "padding: 0; margin-left: 5%; margin-right: 1%; max-width: 80%; float: right;"></img>
-      <p style="text-align: right; float: right; margin-right: 1%;"><a href = "https://github.com/saphirasnow">My Github</a> |
-      <a href = "https://www.linkedin.com/in/bellalaybourn" style = "text-align:right">My LinkedIn</a></p>
-    </header>
-    <main style = "padding-left: 5%; padding-top: 2%; margin-right: 33%;">
-      <div id = "content">
-        <div class = "spacer"></div>
-        <p style = "margin-bottom: 2%; /*font-style: italic;*/">
-          Hi, I'm Bella! Right now, I'm studying computer science at Carnegie Mellon University with intention to
-          minor in Software Engineering and Animation and Special Effects.
-          I love solving problems and taking on challenging new projects in CS.
-          Outside of my studies, I enjoy video editing as well as reading and writing
-          fantasy and science fiction.
-        </p>
-        <p style = "margin-bottom: 2%; /*font-style: italic;*/">
-          Besides designing and programming transitions for my own anime music videos
-          (<a href = "https://www.youtube.com/channel/UC6a3vYs7gLyVEm4tStzcF1A">AMVs</a>),
-          I have edited production videos for the Sitka Fine Arts Camp and taught coding and
-          video editing to middle-school students at the Sitka Public Library during past summers.
-          My current projects include working on a biometric shirt for patients with Dravet Syndrome
-          and a program for achieving chroma key effects using an arbitrary background.
-        </p>
-        <p style = "margin-bottom: 2%; /*font-style: italic;*/">I can be reached at <a href = "mailto:ilaybour@andrew.cmu.edu">ilaybour@andrew.cmu.edu.</a></p>
-        <h3><a href="images/Isabella_Laybourn_Resume.pdf">Resume</a></h3>
+    <div class="wrapper" style = "width: 90%; margin-right: 30%; margin-bottom: 0; max-height: 100%; overflow-y: scroll;">
+      <div class = "wrapper" style = "width: 89%; margin-right: 30%; margin-bottom: 0;">
+        <header style = "max-width: 30%; padding-right: 3%; padding-top: 2%; float: right;">
+          <div class = "spacer"></div>
+          <img class = "img-thumbnail" src = "images/LaybournIsabella19.jpg" style = "padding: 0; margin-left: 5%; margin-right: 1%; max-width: 80%; float: right;"></img>
+          <p style="text-align: right; float: right; margin-right: 1%;"><a href = "https://github.com/saphirasnow">Github</a> |
+          <a href = "https://www.linkedin.com/in/bellalaybourn" style = "text-align:right">LinkedIn</a></p>
+        </header>
+        <main style = "padding-left: 5%; padding-top: 2%; margin-right: 33%;">
+          <div id = "content">
+            <div class = "spacer"></div>
+            <p style = "margin-bottom: 2%; /*font-style: italic;*/">
+              Hi, I'm Bella! Right now, I'm studying computer science at Carnegie Mellon University with intention to
+              minor in Software Engineering and Animation and Special Effects.
+              I love solving problems and taking on challenging new projects in CS.
+              Outside of my studies, I enjoy video editing as well as reading and writing
+              fantasy and science fiction.
+            </p>
+            <p style = "margin-bottom: 2%; /*font-style: italic;*/">
+              My personal projects are varied. Besides designing and programming transitions for my own anime music videos
+              (<a href = "https://www.youtube.com/channel/UC6a3vYs7gLyVEm4tStzcF1A">AMVs</a>),
+              I have edited production videos for the Sitka Fine Arts Camp and taught coding and
+              video editing to middle-school students at the Sitka Public Library during past summers.
+              My current projects include working on a biometric shirt for patients with Dravet Syndrome
+              and a program for achieving chroma key effects using an arbitrary background.
+            </p>
+            <p style = "margin-bottom: 2%;">
+              Recently, I've been exploring software development in security and worked with Salesforce security teams to do design
+              reviews, identify security risks, and create automated support for finding non-rotated secrets.
+            </p>
+            <p style = "margin-bottom: 2%; /*font-style: italic;*/">I can be reached at <a href = "mailto:ilaybour@andrew.cmu.edu">ilaybour@andrew.cmu.edu.</a></p>
+            <h3><a href="images/Isabella_Laybourn_Resume.pdf">Resume</a></h3>
+          </div>
+        </main>
+        <img src = "images/brightmountaintop small.png" style = "display: inline-block; vertical-align: bottom; padding: 0; width: 100%;
+          -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+          mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));"></img>
       </div>
-    </main>
-    <img src = "images/sitkabacktopONLY.png" style = "padding: 0; margin: auto; max-width: 100%;
-      -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));"></img>
-  </div>
-</body>
+    </div>
+  </body>
 </html>

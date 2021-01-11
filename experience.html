@@ -2,9 +2,9 @@
 
 <html style = "position: relative; overflow: hidden; width: 100%; height: 100%;">
 <head>
+  <link rel="icon" type="image/png" href="images/Butterfly Logo small.png">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Bella Laybourn</title>
-  <!--link rel="stylesheet" type="text/css" href="styles.css"-->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
   <link href='https://fonts.googleapis.com/css?family=Quintessential' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
@@ -22,24 +22,31 @@
       margin-bottom: 2%;
       font-size: 17px;
     }
-    h3, h2 {
-      font-family: Varela;
-      margin-bottom: 0;
+    h2 {
+      text-align: center;
+      font-family: 'Varela';
     }
     h3 {
+      font-family: 'Varela';
+      margin-bottom: 0;
       font-size: 23px;
+    }
+    a {
+      color: #ff6666;
+    }
+    body, .wrapper {
+      background-color: #000000;
+      color: #e0d1e0;
     }
   </style>
 </head>
 
-<body style = "background-color: #000000; color: #322332; height: 100%; margin: 0; padding: 0; overflow: scroll;">
+<body style = "height: 100%; margin: 0; padding: 0; overflow-y: hidden;">
   <div style = "margin: auto; max-width: 10%; float: left; ">
     <img src = "images/flameR.png" style = "padding: 0; margin: 0; max-width: 100%; float: left;"></img>
-    <!--img src = "images/flameR.png" style = "padding: 0; margin: 0; max-width: 100%; float: left;"></img-->
   </div>
-  <div class = "wrapper" style = "background-color: #859cbc/*6D8EDE*/; width: 80%; margin: auto;">
-    <nav class = "navbar navbar-expand-sm navbar-dark" style = "background-color: #0F0F0F;">
-      <a class = "selflogo" style = "color: #FEFEFE">Bella Laybourn </a>
+  <nav class = "navbar navbar-expand-sm navbar-dark" style = "background-color: #000/*#0F0F0F*/; width: 80%; margin-left: 10%;">
+      <a href = "index.html"><img src="images/Inverted Clear Bella Logo small.png" style="width: 100px;"></img></a>
       <button class="navbar-toggler" type = "button"
       data-toggle = "collapse" data-target = "#collapsibleNavbar">
         <span class = "navbar-toggler-icon"></span>
@@ -50,7 +57,7 @@
             <a class = "nav-link" href = "./index.html" style = "/*color: #abcdef*/">About Me</a>
           </li>
           <li>
-            <a class = "nav-link" style = "color: #F6D859;">Experience</a>
+            <a class = "nav-link" style = "color: #f65959;">Experience</a>
           </li>
           <li class = "nav-item">
             <a class = "nav-link" href = "./projects.html">Projects</a>
@@ -64,80 +71,135 @@
         </ul>
       </div>
     </nav>
-    <main style = "padding-left: 10%; padding-top: 2%; margin-right: 15%; margin-bottom: 0;">
-      <div id = "content">
-        <h2 style = "/*text-decoration: underline;*/ margin-bottom: 6%;">Experience</h2>
-        <div style = "margin-bottom: 7%;">
-          <h3>Data Analysis Intern at <a href = "http://evalulogic.com/">EvaluLogic</a></h3>
-          <h3 style = "margin-bottom: 3%;">(Summer 2019)</h3>
-          <ul class = "experience" style = "/*list-style-type: none; list-style-position: inside; padding-left: 0;*/">
-            <li style = "font-family: 'Varela', serif;">
-              Analyzed and designed over 100 Excel graphs sorting and depicting information from 2
-              surveys of high school students regarding usage of and attitudes toward controlled substances
-              (alcohol, tobacco, marijuana, prescription drugs).
-            </li>
-            <li style = "font-family: 'Varela', serif;">
-              Formal presentation of the data to client Sitka Counseling at monthly meeting.
-            </li>
-          </ul>
-        </div>
+    <div class = "wrapper" style = "width: 90%; margin-right: 30%; height: 100%; overflow-y: scroll;">
+      <div class = "wrapper" style = "width: 89%; margin-right: 30%; height: 100%;">
+        <main style = "padding-left: 10%; padding-top: 2%; margin-right: 15%; margin-bottom: 0;">
+          <h2 style = "padding-bottom: 5%; padding-top: 3%;">Experience</h2>
+          <div id = "content">
+            <div style = "margin-bottom: 7%;">
+              <h3>Teaching Assistant at <a href = "https://www.cmu.edu/">Carnegie Mellon University</a></h3>
+              <h3 style = "margin-bottom: 3%;">(Fall 2020)</h3>
+              <ul class = "experience" style = "/*list-style-type: none; list-style-position: inside; padding-left: 0;*/">
+                <li style = "font-family: 'Varela', serif;">
+                  TA for <a href = "http://www.math.cmu.edu/~jmackey/151_128/syll.html">21-128 Mathematical Concepts and Proofs</a>.
+                </li>
+                <li style = "font-family: 'Varela', serif;">
+                  Teach weekly recitations, hold office hours, and grade student work.
+                </li>
+                <li style = "font-family: 'Varela', serif;">
+                  Help undergraduate students understand and apply concepts from class, including proofs, functions, and combinatorics.
+                </li>
+              </ul>
+            </div>
 
-        <div style = "margin-bottom: 7%;">
-          <h3>Volunteer Project Administrator at <a href = "https://www.kcaw.org/">Raven Radio</a></h3>
-          <h3 style = "margin-bottom: 3%;">(2017 - 2019)</h3>
-          <ul class = "experience" style = "/*list-style-type: none; list-style-position: inside; padding-left: 0;*/">
-            <li style = "font-family: 'Varela', serif;">
-              Wrote population and use protocols for <a href = "https://scavenger-d2fe3.firebaseapp.com/">Scavenger</a>
-              (online database for cataloging music library) and Music Collector
-            </li>
-            <li style = "font-family: 'Varela', serif;">
-              Populated over 2000 entries to Scavenger and trained volunteers
-            </li>
-          </ul>
-        </div>
+            <div style = "margin-bottom: 7%;">
+              <h3>Software Engineering Intern at <a href = "https://www.salesforce.com/">Salesforce</a></h3>
+              <h3 style = "margin-bottom: 3%;">(Summer 2020)</h3>
+              <ul class = "experience" style = "/*list-style-type: none; list-style-position: inside; padding-left: 0;*/">
+                <li style = "font-family: 'Varela', serif;">
+                  Worked as part of Reference Design, Security Controls, and Architecture (REDSCAR) team focused on assisting other teams
+                  through development and maintenance of tools, documentation, and reference frameworks.
+                </li>
+                <li style = "font-family: 'Varela', serif;">
+                  Categorized security bugs filed by Infrastructure Security Advisory team.
+                </li>
+                <li style = "font-family: 'Varela', serif;">
+                  Collaborated with Secrets team to uncover best areas for and create automated support for secret rotation.
+                </li>
+                <li style = "font-family: 'Varela', serif;">
+                  Integrated Vault and GUS APIs with Python script for AWS Lambda and Go program in Docker container.
+                </li>
+                <li style = "font-family: 'Varela', serif;">
+                  Performed design review for security assessment.
+                </li>
+              </ul>
+            </div>
 
-        <div style = "margin-bottom: 7%;">
-          <h3>
-            Freelance Video Editor at <a href = "https://www.fineartscamp.org/">Sitka Fine Arts Camp</a></h3>
-          <h3 style = "margin-bottom: 3%;">(2018 - 2019)</h3>
-          <ul class = "experience" style = "font-family: 'Varela', serif;">
-            <li>
-              Edited and finalized production videos (Seussical, Oliver, One Acts 2018, and Peter Pan)
-              for distribution and display on the Fine Arts Camp website using Adobe Premiere Pro
-            </li>
-          </ul>
-        </div>
-        <div style = "margin-bottom: 7%;">
-          <h3>Volunteer Course Instructor at <a style="font-style: normal;" href = "https://www.cityofsitka.com/government/departments/library/">Sitka Public Library</a></h3>
-          <h3 style = "margin-bottom: 3%;">(Summer 2016, 2017, 2018)</h3>
-          <ul class = "experience" style = "font-family: 'Varela', serif;">
-            <li>
-              Designed and taught week-long workshops in
-              Scratch, MIT App Inventor, Web Development, and Video Editing
-            </li>
-          </ul>
-        </div>
-        <h2 style = "text-decoration: underline; margin-bottom: 3%; /*text-align: center;*/">Honors and Awards</h2>
-        <ul style = "font-family: 'Varela', serif; margin-bottom: 7%;">
-          <li style = "/*text-align: center;*/">Carnegie Mellon University Dean's List (Fall 2019)</li>
-          <li style = "/*text-align: center;*/">Control Award (Alaska State FTC Competition 2019)</li>
-          <li style = "/*text-align: center;*/">Technovation Semifinalist (2018)</li>
-          <li style = "/*text-align: center;*/">National AP Scholar</li>
-          <li style = "/*text-align: center;*/">National Merit Finalist</li>
-          <li style = "/*text-align: center;*/">U.S. Presidential Scholar Semifinalist</li>
-          <li style = "/*text-align: center;*/">Excellence in English Division Award (Stanford Online High School 2019)</li>
-          <li style = "/*text-align: center;*/">
-            Tora-Con <a href="https://www.youtube.com/watch?v=iYjxp_lOWVM">AMV</a>
-            Competition Semifinalist (2018)
-          </li>
-        </ul>
-        <h2 style = "text-decoration: underline; margin-bottom: 3%; /*text-align: right;*/">Publications</h2>
-        <p style = "/*text-align: right;*/ padding-bottom: 2%; margin-bottom: 0;">
-          <i>Transcending Patriarchy: The Construct of Eve and the Feminine in "Paradise Lost"</i>
-          , De Novo 2018
-        </p>
+            <div style = "margin-bottom: 7%;">
+              <h3>Software Engineering Intern at <a href = "https://www.cybercrucible.com/">Cyber Crucible</a></h3>
+              <h3 style = "margin-bottom: 3%;">(Spring 2020)</h3>
+              <ul class = "experience" style = "/*list-style-type: none; list-style-position: inside; padding-left: 0;*/">
+                <li style = "font-family: 'Varela', serif;">
+                  Created Android app with voice recognition software for security authentication.
+                </li>
+                <li style = "font-family: 'Varela', serif;">
+                  Intetgrated AWS and REST APIs with Android app.
+                </li>
+              </ul>
+            </div>
+
+            <div style = "margin-bottom: 7%;">
+              <h3>Data Analysis Intern at <a href = "http://evalulogic.com/">EvaluLogic</a></h3>
+              <h3 style = "margin-bottom: 3%;">(Summer 2019)</h3>
+              <ul class = "experience" style = "/*list-style-type: none; list-style-position: inside; padding-left: 0;*/">
+                <li style = "font-family: 'Varela', serif;">
+                  Analyzed and designed over 100 Excel graphs sorting and depicting information from 2
+                  surveys of high school students regarding usage of and attitudes toward controlled substances
+                  (alcohol, tobacco, marijuana, prescription drugs).
+                </li>
+                <li style = "font-family: 'Varela', serif;">
+                  Formal presentation of the data to client Sitka Counseling at monthly meeting.
+                </li>
+              </ul>
+            </div>
+
+            <div style = "margin-bottom: 7%;">
+              <h3>Volunteer Project Administrator at <a href = "https://www.kcaw.org/">Raven Radio</a></h3>
+              <h3 style = "margin-bottom: 3%;">(2017 - 2019)</h3>
+              <ul class = "experience" style = "/*list-style-type: none; list-style-position: inside; padding-left: 0;*/">
+                <li style = "font-family: 'Varela', serif;">
+                  Wrote population and use protocols for <a href = "https://scavenger-d2fe3.firebaseapp.com/">Scavenger</a>
+                  (online database for cataloging music library) and Music Collector
+                </li>
+                <li style = "font-family: 'Varela', serif;">
+                  Populated over 2000 entries to Scavenger and trained volunteers
+                </li>
+              </ul>
+            </div>
+
+            <div style = "margin-bottom: 7%;">
+              <h3>
+                Freelance Video Editor at <a href = "https://www.fineartscamp.org/">Sitka Fine Arts Camp</a></h3>
+              <h3 style = "margin-bottom: 3%;">(2018 - 2019)</h3>
+              <ul class = "experience" style = "font-family: 'Varela', serif;">
+                <li>
+                  Edited and finalized production videos (Seussical, Oliver, One Acts 2018, and Peter Pan)
+                  for distribution and display on the Fine Arts Camp website using Adobe Premiere Pro
+                </li>
+              </ul>
+            </div>
+            <div style = "margin-bottom: 7%;">
+              <h3>Volunteer Course Instructor at <a style="font-style: normal;" href = "https://www.cityofsitka.com/government/departments/library/">Sitka Public Library</a></h3>
+              <h3 style = "margin-bottom: 3%;">(Summer 2016, 2017, 2018)</h3>
+              <ul class = "experience" style = "font-family: 'Varela', serif;">
+                <li>
+                  Designed and taught week-long workshops in
+                  Scratch, MIT App Inventor, Web Development, and Video Editing
+                </li>
+              </ul>
+            </div>
+            <h2 style = "text-decoration: underline; margin-bottom: 3%; /*text-align: center;*/">Honors and Awards</h2>
+            <ul style = "font-family: 'Varela', serif; margin-bottom: 7%;">
+              <li style = "/*text-align: center;*/">Carnegie Mellon University Dean's List (Fall 2019)</li>
+              <li style = "/*text-align: center;*/">Control Award (Alaska State FTC Competition 2019)</li>
+              <li style = "/*text-align: center;*/">Technovation Semifinalist (2018)</li>
+              <li style = "/*text-align: center;*/">National AP Scholar</li>
+              <li style = "/*text-align: center;*/">National Merit Finalist</li>
+              <li style = "/*text-align: center;*/">U.S. Presidential Scholar Semifinalist</li>
+              <li style = "/*text-align: center;*/">Excellence in English Division Award (Stanford Online High School 2019)</li>
+              <li style = "/*text-align: center;*/">
+                Tora-Con <a href="https://www.youtube.com/watch?v=iYjxp_lOWVM">AMV</a>
+                Competition Semifinalist (2018)
+              </li>
+            </ul>
+            <h2 style = "text-decoration: underline; margin-bottom: 3%; /*text-align: right;*/">Publications</h2>
+            <p style = "/*text-align: right;*/ padding-bottom: 15%; margin-bottom: 0;">
+              <i>Transcending Patriarchy: The Construct of Eve and the Feminine in "Paradise Lost"</i>
+              , De Novo 2018
+            </p>
+          </div>
+        </main>
       </div>
-    </main>
-  </div>
-</body>
+    </div>
+  </body>
 </html>

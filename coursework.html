@@ -2,9 +2,9 @@
 
 <html style = "position: relative; overflow: hidden; width: 100%; height: 100%;">
 <head>
+  <link rel="icon" type="image/png" href="images/Butterfly Logo small.png">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Bella Laybourn</title>
-  <!--link rel="stylesheet" type="text/css" href="styles.css"-->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
   <link href='https://fonts.googleapis.com/css?family=Quintessential' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
@@ -19,16 +19,26 @@
     h2, h3 {
       font-family: 'Varela', serif;
     }
+    h2 {
+      text-align: center;
+      font-family: 'Varela';
+    }
+    a {
+      color: #66ccff;
+    }
+    body, .wrapper {
+      background-color: #000000;
+      color: #e0d1e0;
+    }
   </style>
 </head>
 
-<body style = "background-color: #000000; color: #322332; height: 100%; margin: 0; overflow: scroll;">
+<body style = "height: 100%; margin: 0; overflow-y: hidden;">
   <div style = "margin: auto; float: left; max-width: 10%;">
     <img src = "images/flameB.png" style = "padding: 0; margin: 0; max-width: 100%; float: left;"></img>
   </div>
-  <div class = "wrapper" style = "background-color: #859cbc/*6D8EDE*/; width: 80%; margin: auto; margin-bottom: 0;">
-    <nav class = "navbar navbar-expand-sm navbar-dark" style = "background-color: #0F0F0F;">
-      <a class = "selflogo" style = "color: #FEFEFE">Bella Laybourn </a>
+  <nav class = "navbar navbar-expand-sm navbar-dark" style = "background-color: #000/*#0F0F0F*/; width: 80%; margin-left: 10%;">
+      <a href = "index.html"><img src="images/Inverted Clear Bella Logo small.png" style="width: 100px;"></img></a>
       <button class="navbar-toggler" type = "button"
       data-toggle = "collapse" data-target = "#collapsibleNavbar">
         <span class = "navbar-toggler-icon"></span>
@@ -45,7 +55,7 @@
             <a class = "nav-link" href = "./projects.html">Projects</a>
           </li>
           <li>
-            <a class = "nav-link" style = "color: #F6D859;">Coursework</a>
+            <a class = "nav-link" style = "color: #5988f6;">Coursework</a>
           </li>
           <li class = "nav-item">
             <a class = "nav-link" href = "./contact.html">Contact Me</a>
@@ -53,58 +63,70 @@
         </ul>
       </div>
     </nav>
-    <main style = "padding-left: 10%; padding-right: 5%; padding-top: 2%; margin-right: 5%;">
-      <div id = "content">
-        <h2 style = "margin-bottom: 8%;">Selected Coursework</h2>
-        <div class = "right">
-          <img src = "images/cmulogo.png" style = "padding: 0; margin-top: 20%; margin-left: 0.1%; margin-right: 0.1%; max-width: 30%; float: right;"></img>
+    <div class = "wrapper" style = "width: 90%; margin-right: 30%; margin-bottom: 0; height: 100%; overflow-y: scroll;">
+      <div class = "wrapper" style = "width: 89%; margin-right: 30%; margin-bottom: 0; height: 100%;">
+        <main style = "padding-left: 10%; padding-right: 5%; padding-top: 2%; margin-right: 5%;">
+          <h2 style = "padding-bottom: 5%; padding-top: 3%;">Selected Coursework</h2>
+          <div id = "content">
+            <div id = "cmu">
+            <div class = "right">
+              <img src = "images/cmulogo.png" style = "padding: 0; margin-top: 0%; margin-left: 0.1%; margin-right: 0.1%; width: 20%; float: right;"></img>
+            </div>
+              <div class = "left" style = "margin-bottom: 7%;">
+                <h3>Carnegie Mellon University</h3>
+                <p style = "margin-bottom: 1%;"><b>Fall 2020 (Current)</b></p>
+                <ul class = "classes" style = "margin-bottom: 2%;">
+                  <li>Parallel and Sequential Data Structures and Algorithms</li>
+                  <li>Principles of Software System Construction</li>
+                  <li>Introduction to 3D Animation</li>
+                  <li>Experimental Physics</li>
+                </ul>
+                <p style = "margin-bottom: 1%;"><b>Spring 2020</b></p>
+                <ul class = "classes" style = "margin-bottom: 2%;">
+                  <li>Great Ideas in Theoretical Computer Science</li>
+                  <li>Functional Programming</li>
+                  <li>Matrices and Linear Algebra</li>
+                  <li>Calculus in 3D</li>
+                </ul>
+                <p style = "margin-bottom: 1%;"><b>Fall 2019</b></p>
+                <ul class = "classes">
+                  <li>Principles of Imperative Computation</li>
+                  <li>Math Foundations for Computer Science</li>
+                  <li>Integration and Approximation</li>
+                  <li>Great Practical Ideas in Computer Science</li>
+                  <li>Introduction to Japanese Language and Culture</li>
+                </ul>
+              </div>
+            </div>
+            <div id = "stanford">
+              <div class = "right">
+                <img src = "images/stanfordlogo.png" style = "padding: 0; margin-top: 0%; margin-left: 0.1%; margin-right: 0.1%; width: 20%; float: right;"></img>
+              </div>
+              <div style = "padding-bottom: 20%;">
+                <h3>Stanford Online High School</h3>
+                <ul class = "classes">
+                  <li>AP Computer Science A</li>
+                  <li>Data Structures and Algorithms</li>
+                  <li>AP Calculus AB</li>
+                  <li>Proofs and Problem Solving Techniques</li>
+                  <li>Multivariable Calculus</li>
+                  <li>Linear Algebra</li>
+                  <li>Differential Equations</li>
+                  <li>AP Physics C: Mechanics</li>
+                  <li>AP Physics C: Electricity & Magnetism</li>
+                  <li>UL Physics: Light and Heat</li>
+                  <li>UL Physics: Modern Physics</li>
+                  <li>AP Chemistry</li>
+                  <li>AP Biology</li>
+                  <li>AP Literature and Composition</li>
+                  <li>AP US History</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class = "left" style = "margin-bottom: 7%;">
-          <h3>Carnegie Mellon University</h3>
-          <h3 style = "margin-bottom: 4%;">(Current QPA 4.0)</h3>
-          <p style = "margin-bottom: 1%;"><b>Spring 2020 (Current)</b></p>
-          <ul class = "classes" style = "margin-bottom: 2%;">
-            <li>Great Ideas in Theoretical Computer Science</li>
-            <li>Functional Programming</li>
-            <li>Matrices and Linear Algebra</li>
-            <li>Calculus in 3D</li>
-          </ul>
-          <p style = "margin-bottom: 1%;"><b>Fall 2019</b></p>
-          <ul class = "classes">
-            <li>Principles of Imperative Computation</li>
-            <li>Math Foundations for Computer Science</li>
-            <li>Integration and Approximation</li>
-            <li>Great Practical Ideas in Computer Science</li>
-            <li>Introduction to Japanese Language and Culture</li>
-          </ul>
-        </div>
-        <div class = "right">
-          <img src = "images/stanfordlogo.png" style = "padding: 0; margin-top: 20%; margin-left: 0.1%; margin-right: 0.1%; max-width: 30%; float: right;"></img>
-        </div>
-        <div style = "padding-bottom: 5px;">
-          <h3>Stanford Online High School</h3>
-          <h3 style = "margin-bottom: 4%;">(GPA 3.92/4.0)</h3>
-          <ul class = "classes">
-            <li>AP Computer Science A</li>
-            <li>Data Structures and Algorithms</li>
-            <li>AP Calculus AB</li>
-            <li>Proofs and Problem Solving Techniques</li>
-            <li>Multivariable Calculus</li>
-            <li>Linear Algebra</li>
-            <li>Differential Equations</li>
-            <li>AP Physics C: Mechanics</li>
-            <li>AP Physics C: Electricity & Magnetism</li>
-            <li>UL Physics: Light and Heat</li>
-            <li>UL Physics: Modern Physics</li>
-            <li>AP Chemistry</li>
-            <li>AP Biology</li>
-            <li>AP Literature and Composition</li>
-            <li>AP US History</li>
-          </ul>
-        </div>
+        </main>
       </div>
     </div>
-    </main>
-  </div>
-</body>
+  </body>
 </html>
