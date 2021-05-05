@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-md {
+    max-width: 960px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    float: right;
+}
+
+.navbar {
+ background-color: #061946!important;
+}
+
+.row {
+    margin-bottom: 25px;
+}
+
+.effects-row {
+    margin-bottom: 100px;
+}
+
+/* .card {
+    margin-bottom: 15px;
+} */
+
+.card img {
+    max-width: 100%;
+    object-fit: cover; 
+}
+
+.card .row {
+    margin-bottom: 0;
+}
+
+.card-body .form-label.end {
+    float: right;
+}
+
+.can-do-row .card {
+    padding-left: 0;
+}
+
+.card-text p {
+    font-size: 1.125em;
+}
+
+.can-do-row .col-3 {
+    display: flex;
+}
+
+.form-range {
+    width: 75%;
+    float: left;
+}
+
+.model-row {
+    text-align: left;
+}
+
+#effects {
+    text-align: center;
+}
+
+/* #header-img {
+    max-height: 650px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(75%);
+    margin-bottom: 50px;
+} */
+
+#header-text {
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    z-index: 1;
+    color: #fff;
+}
+
+#banner {
+    background-image: url('imgs/turbines.jpg');
+
+    min-height: 325px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 50px;
+}
+
+#intro {
+    margin-bottom: 50px;
+    font-size: 1.125rem;
+}

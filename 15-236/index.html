@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+
+        <title>What is your Carbon Footprint?</title>
+    </head>
+    <style>
+        canvas {
+          width: 1000px;
+          height: 400px;
+        }
+    </style>
+    <body>
+        <header>
+            <div id="banner">
+                <h1 id="header-text">What is your Carbon Footprint?</h1>
+                <!-- <img src="imgs/turbines.jpg" class="img-fluid" alt="wind-turbines" id="header-img"> -->
+            </div>
+        </header>
+
+        <div class="container-md" id="content">
+
+            <div class="row" id='intro'>
+                <div class="col-12">
+                    <p>
+                        Carbon footprint is the overall amount of greenhouse gas emissions, consisting primarily of carbon dioxide, associated
+                        with an organization, event or production. It is one of the most common measures of the effect of an individual,
+                        community, industry, or country on the environment. An increase in greenhouse gas emissions, and therefore in carbon
+                        footprint, is the primary event associated with climate change that has led to global warming.
+
+                        <br><br>
+
+                        Climate change is affecting the environment, wildlife, human health, and even economies. Scroll through our page to
+                        see how much CO2 do your activities produces and what you can do about it.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <h2>Public Transport</h2>
+                </div>
+
+                <div class="row g-2 gy-2">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">How many flights do you take per year?</h5>
+                                <p class="card-text">Around 2.4% of global CO2 emissions come from aviation. Together with other gases and the water vapour trails produced
+                                by aircraft, the industry is responsible for around 5% of global warming.</p>
+                                <p class="card-text"><small class="text-muted">Source: <a href="https://www.bbc.com/future/article/20200218-climate-change-how-to-cut-your-carbon-emissions-when-flying">BBC</a></small></p>
+                                <input type="number" min="0" max="150" value="2" step="1" id="transFlights">
+                                <input type="range" class="form-range" min="0" max="150" value='2' id="transFlightsR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">How many miles do you travel a day by bus?</h5>
+                                <p class="card-text">Moving a passenger one mile in an auto uses less energy, and produces less emissions, per passenger-mile (one person
+                                traveling one mile) than carrying that person one mile in an urban transit bus.</p>
+                                <p class="card-text"><small class="text-muted">Source: <a href="https://reason.org/commentary/does-bus-transit-reduce-greenhouse/#:~:text=These%20fuel%20savings%20yield%20commensurate,bus%20emits%20only%2014%20pounds.">Reason Foundation</a></small></p>
+                                <input type="number" min="0" max="150" value="10" step="1" id="transBus">
+                                <input type="range" class="form-range" min="0" max="150" value='10' id="transBusR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">How many miles do you travel a day by train?</h5>
+                                <p class="card-text">Rail transportation emits about 0.2 pounds of greenhouse gases per passenger mile.</p>
+                                <p class="card-text"><small class="text-muted">Source: <a href="https://www.sightline.org/maps-and-graphics/climate-CO2byMode/">Sightline Institute</a></small></p>
+                                <input type="number" min="0" max="150" value="10" step="1" id="transTrain">
+                                <input type="range" class="form-range" min="0" max="150" value='10' id="transTrainR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">How many miles do you travel a day by car?</h5>
+                                <p class="card-text">A typical passenger vehicle emits about 4.6 metric tons of carbon dioxide per year.</p>
+                                <p class="card-text"><small class="text-muted">Source: <a href="https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle#:~:text=typical%20passenger%20vehicle%3F-,A%20typical%20passenger%20vehicle%20emits%20about%204.6%20metric%20tons%20of,8%2C887%20grams%20of%20CO2.">EPA</a></small></p>
+                                <input type="number" min="0" max="150" value="45" step="1" id="transCarMiles">
+                                <input type="range" class="form-range" min="0" max="150" value='45' id="transCarMilesR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">How many miles per gallon does you car get?</h5>
+                                <p class="card-text">A vehicle's emissions can vary depending on the
+                                vehicle’s fuel, fuel economy, and the number of miles driven per year.</p>
+                                <p class="card-text"><small class="text-muted">Source: <a href="https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle#:~:text=typical%20passenger%20vehicle%3F-,A%20typical%20passenger%20vehicle%20emits%20about%204.6%20metric%20tons%20of,8%2C887%20grams%20of%20CO2.">EPA</a></small></p>
+                                <input type="number" min="0" max="150" value="25" step="1" id="transCarEff">
+                                <input type="range" class="form-range" min="0" max="150" value='25' id="transCarEffR">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- First model goes here -->
+                    <div class="model-row" id="model-row1">
+                        <div class="col-12">
+                            <br>
+                            <canvas id="firstModel" width="1000" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <h2>Household & Waste</h2>
+                </div>
+
+
+
+                <div class="row g-2 gy-2">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What state do you live in?</h5>
+                                <p class="card-text">Energy and natural gas rates <a href="https://www.eia.gov/electricity/sales_revenue_price/pdf/table5_a.pdf">vary per state</a>.</p>
+                                <input type="text" value="Illinois" id="houseState">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                            <h5 class="card-title">How much do you spend on electricity and natural gas each month? ($)</h5>
+                                <p class="card-text">Residential <a href="https://www.epa.gov/egrid">energy use</a> accounts for roughly 20% of greenhouse gas (GHG) emissions in the United States.</p>
+                                <p class="card-text"><small class="text-muted">Source: <a href="https://www.pnas.org/content/117/32/19122">Goldstein et al.</a></small></p>
+                                <input type="number" min="0" max="500" value="115" step="1" id="houseBill">
+                                <input type="range" class="form-range" min="0" max="500" value='115' id="houseBillR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">How much do you recycle? (pounds/day)</h5>
+                                <p class="card-text">Recycling <a href="https://doi.org/10.1016/j.resconrec.2015.10.026">helps reduce greenhouse gas emissions</a> by reducing energy consumption. Using recycled materials to make new
+                                products reduces the need for virgin materials. This avoids greenhouse gas emissions that would result from extracting
+                                or mining virgin materials.</p>
+                                <p class="card-text"><small class="text-muted">Source: <a href="https://kingcounty.gov/depts/dnrp/solid-waste/programs/climate/climate-change-recycling.aspx#:~:text=Recycling%20helps%20reduce%20greenhouse%20gas,extracting%20or%20mining%20virgin%20materials.">King County</a></small></p>
+                                <input type="number" min="0" max="500" value="1.2" step="0.1" id="wasteRecycle">
+                                <input type="range" class="form-range" min="0" max="50" value='1.2' step="0.1" id="wasteRecycleR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">What is your monthly water bill? ($)</h5>
+                                <p class="card-text">The CO2 embedded in the nation's water represents 5% of all U.S. carbon emissions and is equivalent to the emissions of
+                                over 62 coal fired power plants.</p>
+                                <p class="card-text"><small class="text-muted">Source: <a href="https://www.csu.edu/cerc/researchreports/documents/CarbonFootprintofWater-RiverNetwork-2009.pdf">The Carbon Footprint of Water</a></small></p>
+                                <input type="number" min="0" max="500" step="1" value="70" id="wasteBill">
+                                <input type="range" class="form-range" min="0" max="500" value='70' id="wasteBillR">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second model goes here -->
+                    <div class="model-row" id="model-row2">
+                        <div class="col-12">
+                            <br>
+                            <canvas id="secondModel" width="1000" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <h2>Food</h2>
+                    <p>
+                        The amounts of greenhouse gases emissions vary from food to food, with animal products like beef at the higher end of
+                        the scale, and plants like lentils at the low end. But it’s a complicated picture, and the carbon footprint of one type
+                        of food can be different depending on how and where it’s produced.
+
+                        <br><br>
+
+                        Fruits and vegetables, on the whole, have a lower carbon footprint to animal products. Because they have a lower carbon
+                        footprint in total than foods like beef and other meat products, transport plays a
+                        bigger role in the overall carbon footprint plant-based foods.
+                    </p>
+                    <p>Sources:
+                        <small class="text-muted">
+                            <a href="https://www.foodunfolded.com/article/do-you-know-the-carbon-footprint-of-these-common-foods#:~:text=Fruit%20and%20vegetables%20have%20lower%20carbon%20footprint&text=Because%20they%20have%20a%20lower,veg%20will%20mean%20lower%20emissions.">Food Unfolded</a>,
+                            <a href="https://www.greeneatz.com/foods-carbon-footprint.html">Green Eatz</a>,
+                            <a href="https://ourworldindata.org/food-choice-vs-eating-local">Our World in Data</a>
+                        </small>
+                    </p>
+                </div>
+
+                <div class="row g-2 gy-2">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> What percent of your diet is fruits and vegetables?</h5>
+                                <input type="number" min="0" max="100" value="10" step="1" id="vegetableFruitPercent">
+                                <input type="range" class="form-range" min="0" max="100" value='10' id="veggieR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> What percent of your diet is grains?</h5>
+                                <p class="card-text"></p>
+                                <input type="number" min="0" max="100" value="20" step="1" id="grainPercent">
+                                <input type="range" class="form-range" min="0" max="100" value='20' id="grainR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> What percent of your diet is nuts?</h5>
+                                <input type="number" min="0" max="100" value="2" step="1" id="nutsPercent">
+                                <input type="range" class="form-range" min="0" max="100" value='2' id="nutsR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> What percent of your diet is snacks?</h5>
+                                <input type="number" min="0" max="100" value="43" step="1" id="snackPercent">
+                                <input type="range" class="form-range" min="0" max="100" value='43' id="snackR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> What percent of your diet is meat?</h5>
+                                <input type="number" min="0" max="100" value="15" step="1" id="meatPercent">
+                                <input type="range" class="form-range" min="0" max="100" value='15' id="meatR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> What percent of your diet is dairy?</h5>
+                                <input type="number" min="0" max="100" value="10" step="1" id="dairyPercent">
+                                <input type="range" class="form-range" min="0" max="100" value='10' id="dairyR">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> How many calories do you roughly eat per day?</h5>
+                                <input type="number" min="0" max="10000" value="1600" step="1" id="caloriesPerDay">
+                                <input type="range" class="form-range" min="0" max="10000" value='1600' id="caloriesR">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second model goes here -->
+                    <div class="model-row" id="model-row3">
+                        <div class="col-12">
+                            <br>
+                            <canvas id="thirdModel" width="1000" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <h2>Altogether Now</h2>
+                    <p>
+                        Represent everything together.
+                        <br><br>
+                    </p>
+                </div>
+
+                <div class="row g-2 gy-2">
+                    <!-- Fourth model goes here -->
+                    <div class="model-row" id="model-row4">
+                        <div class="col-12">
+                            <br>
+                            <canvas id="fourthModel" width="1000" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What can you do? -->
+            <div class="row can-do-row">
+                <div class="row">
+                    <h2>What can you do?</h2>
+                </div>
+                <div class="row can-do-card-row">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="imgs/public-transport.jpg" alt="roads">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Public Transport</h5>
+                                    <p class="card-text">
+                                        Fly often? Taking one fewer long round-trip flight could shrink your personal carbon footprint significantly. Think
+                                        about it this way: If you use public transportation often, and fly home to visit family just occasionally, your carbon
+                                        footprint might still be relatively sustainable, but if you drive and fly a lot, your emissions will be higher.
+                                    </p>
+                                    <p class="card-text">
+                                        Going carless for a year could save about 2.6 tons of carbon dioxide, according to 2017 study from researchers at Lund
+                                        University and the University of British Columbia — that’s a little more than a roundtrip transatlantic flight. How can
+                                        you stop using a car? <strong>Try taking a train, bus or better yet, ride a bike.</strong>
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Source: <a href="https://www.nytimes.com/guides/year-of-living-better/how-to-reduce-your-carbon-footprint">New York Times</a></small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Household & Waste</h5>
+                                    <p class="card-text">
+                                        In the average American home, 25 percent of energy is used to heat spaces, 13 percent is used to heat water, 11 percent
+                                        is used for cooling and the remainder is spent on appliances, according to estimates from the Natural Resources Defense
+                                        Council. Making even small changes to these can make a big difference: <strong>turn down the heat, turn down your water heater,
+                                        turn off lights and appliances, replace lights, choose renewables, replace old appliances,</strong> and more.
+                                    </p>
+                                    <p class="card-text">
+                                        Americans generate about roughly 258 million tons of trash a year, 169 million tons of which ends up in landfills and
+                                        incinerators, according to a 2014 report from the E.P.A. That year, American’s recycled and composted 89 million tons of
+                                        municipal solid waste — this saved the same amount of energy as generated by 25 million homes. But much of the waste
+                                        that can be recycled still ends up in landfills.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Source: <a href="https://www.nytimes.com/guides/year-of-living-better/how-to-reduce-your-carbon-footprint">New York Times</a></small></p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="imgs/housing-waste.jpg" alt="recycling bins">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <img src="imgs/food.jpg" alt="recycling bins">
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Food</h5>
+                                    <p class="card-text">
+                                        While food systems are complicated, and research is still evolving on what the most environmentally-friendly diet is,
+                                        experts mostly agree that <strong>cutting down on meat, and red meat in particular, is a better choice for the environment.</strong> This
+                                        is because the production of red meat uses a lot of feed, water and land. Cows themselves also give off methane
+                                        emissions (a harmful greenhouse gas).
+                                    </p>
+                                    <p class="card-text">
+                                        Overall, <strong>eating low down the food chain as often as you can</strong> is a probably a good way to reduce your carbon footprint and
+                                        stay healthy, say experts. That means <strong>filling your plate with vegetables, fruits, grains and beans.</strong> For meat-lovers,
+                                        even <strong>swapping carbon-intensive meats like beef and lamb with chicken</strong> can make a difference. Better still, <strong>swap a few
+                                        meals per-week to vegan or vegetarian.</strong>
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Source: <a href="https://www.nytimes.com/guides/year-of-living-better/how-to-reduce-your-carbon-footprint">New York Times</a></small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+          <div style="margin: auto; width: 75%">
+            <h6>Additional Sources:</h6>
+            <ul>
+              <li>
+                <a href="https://doi.org/10.1021/es102221h">Quantifying Carbon Footprint Reduction Opportunities for U.S. Households and Communities</a>
+              </li>
+              <li>
+                <a href="https://www.nytimes.com/guides/year-of-living-better/how-to-reduce-your-carbon-footprint">How to Reduce Your Carbon Footprint</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+            integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+            async></script>
+        <script src="script.js" type="text/javascript"></script>
+        <script>
+            let flightsR = document.getElementById('transFlightsR');
+            let busR = document.getElementById('transBusR');
+            let trainR = document.getElementById('transTrainR');
+            let carMilesR = document.getElementById('transCarMilesR');
+            let carEffR = document.getElementById('transCarEffR');
+            let houseBillR = document.getElementById('houseBillR');
+            let recycleR = document.getElementById('wasteRecycleR');
+            let waterR = document.getElementById('wasteBillR');
+            let veggieR = document.getElementById('veggieR');
+            let meatR = document.getElementById('meatR');
+            let dairyR = document.getElementById('dairyR');
+            let nutsR = document.getElementById('nutsR');
+            let snacksR = document.getElementById('snackR');
+            let grainR = document.getElementById('grainR');
+            let caloriesR = document.getElementById('caloriesR');
+
+            let trans_numFlights = document.getElementById("transFlights");
+            let trans_busMiles = document.getElementById("transBus");
+            let trans_trainMiles = document.getElementById("transTrain");
+            let trans_carMiles = document.getElementById("transCarMiles");
+            let trans_carEfficiency = document.getElementById("transCarEff");
+            // let trans_out = document.getElementById("transportOutput");
+
+
+            let house_state = document.getElementById("houseState");
+            let house_bill = document.getElementById("houseBill");
+            // let house_out = document.getElementById("houseOutput");
+
+            let fruitveg_percent = document.getElementById("vegetableFruitPercent");
+            let meat_percent = document.getElementById("meatPercent");
+            let dairy_percent = document.getElementById("dairyPercent");
+            let nut_percent = document.getElementById("nutsPercent");
+            let snack_percent = document.getElementById("snackPercent");
+            let grain_percent = document.getElementById("grainPercent");
+            let cal_per_day = document.getElementById("caloriesPerDay");
+            // let food_out = document.getElementById("foodOutput");
+
+            let waste_recycle = document.getElementById("wasteRecycle");
+            let waste_bill = document.getElementById("wasteBill");
+            // let waste_out = document.getElementById("wasteOutput");
+
+            // let total_out = document.getElementById("totalOutput");
+
+            function update() { // big
+                let transportArray = calcTransportationCost(parseInt(trans_numFlights.value), parseInt(trans_busMiles.value),
+                    parseInt(trans_trainMiles.value), parseInt(trans_carMiles.value), parseInt(trans_carEfficiency.value));
+                let transport = sumArray(transportArray);
+                let houseAndWasteArray = calcHouseAndWaste(parseInt(house_bill.value) * 12.0, house_state.value, parseInt(waste_recycle.value) * 365,
+                                                           parseInt(waste_bill.value) * 12.0);
+                let houseAndWaste = sumArray(houseAndWasteArray);
+                let foodArray = calcFood(parseInt(fruitveg_percent.value), parseInt(meat_percent.value), parseInt(dairy_percent.value),
+                    parseInt(nut_percent.value), parseInt(snack_percent.value), parseInt(grain_percent.value),
+                    parseInt(cal_per_day.value));
+                let food = sumArray(foodArray);
+                let cnvs = [document.getElementById("firstModel"), document.getElementById("secondModel"),
+                    document.getElementById("thirdModel"), document.getElementById("fourthModel")];
+                //https://www.tutorialrepublic.com/faq/how-to-detect-screen-resolution-with-javascript.php
+                if (cnvs[0].height == 400 && cnvs[0].width == 1000) {
+                    for (let i = 0; i < 4; i++) {
+                        cnvs[i].height = cnvs[i].height * window.devicePixelRatio;
+                        cnvs[i].width = cnvs[i].width * window.devicePixelRatio;
+                    }
+                }
+                drawTransport(cnvs[0], transportArray);
+                drawHouseAndWaste(cnvs[1], houseAndWasteArray);
+                drawFood(cnvs[2], foodArray);
+                drawBarChart(cnvs[3], transportArray, houseAndWasteArray, foodArray);
+            }
+
+
+            function updateInput(){
+                trans_numFlights.value = flightsR.value;
+                trans_busMiles.value = busR.value;
+                trans_trainMiles.value = trainR.value;
+                trans_carMiles.value = carMilesR.value;
+                trans_carEfficiency.value = carEffR.value;
+                house_bill.value = houseBillR.value;
+                waste_recycle.value = recycleR.value;
+                waste_bill.value = waterR.value;
+                fruitveg_percent.value = veggieR.value;
+                meat_percent.value = meatR.value;
+                dairy_percent.value = dairyR.value;
+                nut_percent.value = nutsR.value;
+                snack_percent.value = snacksR.value;
+                grain_percent.value = grainR.value;
+                cal_per_day.value = caloriesR.value;
+                update();
+            }
+
+            updateInput();
+            flightsR.addEventListener("input", updateInput);
+            busR.addEventListener("input", updateInput);
+            trainR.addEventListener("input", updateInput);
+            carMilesR.addEventListener("input", updateInput);
+            carEffR.addEventListener("input", updateInput);
+            houseBillR.addEventListener("input", updateInput);
+            recycleR.addEventListener("input", updateInput);
+            waterR.addEventListener("input", updateInput);
+            veggieR.addEventListener("input", updateInput);
+            meatR.addEventListener("input", updateInput);
+            dairyR.addEventListener("input", updateInput);
+            nutsR.addEventListener("input", updateInput);
+            snacksR.addEventListener("input", updateInput);
+            grainR.addEventListener("input", updateInput);
+            caloriesR.addEventListener("input", updateInput);
+
+            update();
+            trans_numFlights.addEventListener("input", update);
+            trans_busMiles.addEventListener("input", update);
+            trans_trainMiles.addEventListener("input", update);
+            trans_carMiles.addEventListener("input", update);
+            trans_carEfficiency.addEventListener("input", update);
+            house_state.addEventListener("input", update);
+            house_bill.addEventListener("input", update);
+            fruitveg_percent.addEventListener("input", update);
+            meat_percent.addEventListener("input", update);
+            dairy_percent.addEventListener("input", update);
+            nut_percent.addEventListener("input", update);
+            snack_percent.addEventListener("input", update);
+            grain_percent.addEventListener("input", update);
+            cal_per_day.addEventListener("input", update);
+            waste_recycle.addEventListener("input", update);
+            waste_bill.addEventListener("input", update);
+        </script>
+    </body>
+</html>
