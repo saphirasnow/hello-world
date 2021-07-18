@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>8 Queens Problem</title>
+</head>
+<style>
+  body {
+    background:#eddcc0;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  #board {
+    margin: auto;
+  }
+</style>
+<body>
+  <h1>8 Queens Simulator</h1>
+
+  <p>For the 8 Queens problem, there is a valid solution regardless of where
+  you place the first queen. <b>Choose the position of the first queen below</b>
+  to simulate different valid boards.</p>
+
+  <table id="board" style="background-color:maroon;"></table>
+</body>
+<script>
+  const board = document.getElementById("board");
+
+  //https://stackoverflow.com/questions/1038727/how-to-get-browser-width-using-javascript-code
+  const boardSize = Math.max(document.documentElement.offsetWidth, document.documentElement.offsetHeight) / 3;
+  board.width = boardSize + "px";
+  board.height = boardSize + "px";
+  console.log("Board Size: " + boardSize);
+  board.innerHTML = generateTable(boardSize / 8, "burlywood", "sienna");
+
+  //https://stackoverflow.com/questions/4588759/how-do-you-set-a-javascript-onclick-event-to-a-class-with-css
+  const buttons = document.getElementsByClassName("bb");
+  for(let c = 0; c < buttons.length; c++) {
+    buttons[c].onclick = function() {
+      clearBoard("burlywood", "sienna");
+      buttons[c].style.backgroundColor = "pink";
+      buttons[c].innerHTML = "<div style=\"font-size:" + (boardSize / 16) + "px;\">Q</div>";
+      const buttonID = buttons[c].id;
+      const row = parseInt(buttonID.charAt(0));
+      const col = parseInt(buttonID.charAt(1));
+      const queens = getQueens(row, col);
+      for(let i = 0; i < 8; i++) {
+        for(let j = 0; j < 8; j++) {
+          if(queens[i][j] && !(row == i && col == j)) {
+            const qButton = document.getElementById("" + i + j);
+            qButton.style.backgroundColor = "red";
+            qButton.innerHTML = "<div style=\"font-size:" + (boardSize / 16) + "px;\">Q</div>";
+          }
+        }
+      }
+    }
+  }
+
+  function clearBoard(color1, color2) {
+    for(let c = 0; c < 4; c++) {
+      for(let d = 0; d < 4; d++) {
+        let qButton = document.getElementById("" + (2 * c) + (2 * d));
+        qButton.style.backgroundColor = color1;
+        qButton.innerHTML = "";
+        qButton = document.getElementById("" + (2 * c) + (2 * d + 1));
+        qButton.style.backgroundColor = color2;
+        qButton.innerHTML = "";
+      }
+      for(let d = 0; d < 4; d++) {
+        let qButton = document.getElementById("" + (2 * c + 1) + (2 * d));
+        qButton.style.backgroundColor = color2;
+        qButton.innerHTML = "";
+        qButton = document.getElementById("" + (2 * c + 1) + (2 * d + 1));
+        qButton.style.backgroundColor = color1;
+        qButton.innerHTML = "";
+      }
+    }
+  }
+
+  function generateTable(size, color1, color2) {
+    let htmlStr = "";
+    for(let c = 0; c < 4; c++) {
+      htmlStr = htmlStr + "<tr style=\"height:" + size + "px;width:" + size + "px;padding:0;margin:0;\">";
+      for(let d = 0; d < 4; d++) {
+        htmlStr = htmlStr + "<td><button class=\"bb\" id=\"" + (2 * c) + (2 * d) + "\" style=\"height:" + size + "px;width:" + size
+        + "px;background-color:" + color1 + ";padding:0;margin:0;\"></button></td>"
+        + "<td><button class=\"bb\" id=\"" + (2 * c) + (2 * d + 1) + "\" style=\"height:" + size + "px;width:" + size
+        + "px;background-color:" + color2 + ";padding:0;margin:0;\"></button></td>";
+      }
+      htmlStr = htmlStr + "</tr>" + "<tr style=\"height:" + size + "px;width:" + size + "px;padding:0;margin:0;\">";
+      for(let d = 0; d < 4; d++) {
+        htmlStr = htmlStr + "<td><button class=\"bb\" id=\"" + (2 * c + 1) + (2 * d) + "\"style=\"height:" + size + "px;width:" + size
+        + "px;background-color:" + color2 + ";padding:0;margin:0;\"></button></td>"
+        + "<td><button class=\"bb\" id=\"" + (2 * c + 1) + (2 * d + 1) + "\" style=\"height:" + size + "px;width:" + size
+        + "px;background-color:" + color1 + ";padding:0;margin:0;\"></button></td>";
+      }
+      htmlStr = htmlStr + "</tr>";
+    }
+    return htmlStr;
+  }
+
+  function getQueens(row, col) {
+    const boardArr = [];
+    for(let r = 0; r < 8; r++) {
+      boardArr.push([]);
+      for(let c = 0; c < 8; c++) {
+        boardArr[r].push(false);
+      }
+    }
+    boardArr[row][col] = true;
+    findSol(0);
+    function legal(lr, lc) {
+      if(boardArr[lr][lc]) {
+        return false;
+      }
+      for(let i = 0; i < 8; i++) {
+        if((i != lc && boardArr[lr][i])
+          || (i != lr && boardArr[i][lc])
+          || i != 0 && ((lr - i > -1 && lc - i > -1 && boardArr[lr-i][lc-i])
+          || (lr + i < 8 && lc + i < 8 && boardArr[lr+i][lc+i])
+          || (lr - i > -1 && lc + i < 8 && boardArr[lr-i][lc+i])
+          || (lr + i < 8 && lc - i > -1 && boardArr[lr+i][lc-i]))) {
+          return false;
+        }
+      }
+      return true;
+    }
+    function findSol(queens) {
+      if(queens == 7) {
+        return true;
+      }
+      for(let r = 0; r < 8; r++) {
+        for(let c = 0; c < 8; c++) {
+          if(legal(r, c)) {
+            boardArr[r][c] = true;
+            if(findSol(queens + 1)) {
+              return true;
+            }
+            boardArr[r][c] = false;
+          }
+        }
+      }
+      return false;
+    }
+    console.log(boardArr);
+    return boardArr;
+  }
+</script>
+</html>
