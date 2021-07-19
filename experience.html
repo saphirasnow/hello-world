@@ -24,12 +24,15 @@
     }
     h2 {
       text-align: center;
-      font-family: 'Varela';
+      /*font-family: 'Varela';*/
     }
     h3 {
       font-family: 'Varela';
       margin-bottom: 0;
       font-size: 23px;
+    }
+    h5 {
+      font-family: 'Varela';
     }
     a {
       color: #ff6666;
@@ -77,172 +80,193 @@
           <h2 style = "padding-bottom: 5%; padding-top: 3%;">Experience</h2>
           <div id = "content">
             <div style = "margin-bottom: 7%;">
-              <h3>Teaching Assistant at <a href = "https://www.cmu.edu/">Carnegie Mellon University</a></h3>
-              <h3 style = "margin-bottom: 3%;">(Fall 2020, Fall 2021)</h3>
-              <ul class = "experience">
-                <li style = "font-family: 'Varela', serif;">
-                  TA for <a href = "http://www.math.cmu.edu/~jmackey/151_128/syll.html">15-151/21-128 Mathematical Concepts and Proofs</a>.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Teach weekly recitations, hold office hours, and grade student work.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Help undergraduate students understand and apply concepts from class, including proofs, functions, and combinatorics.
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">Software Engineering Intern at <a href = "https://www.salesforce.com/">Salesforce</a></h3>
+              <div style = "padding: 0; padding-left: 3%;">
+                <h5>Summer 2021</h5>
+                <ul class = "experience">
+                  <li style = "font-family: 'Varela', serif;">
+                    Worked as part of Reference Design, Security Controls, and Architecture (REDSCAR) team focused on assisting other teams
+                    through development and maintenance of tools, documentation, and reference frameworks.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Researched and improved Salesforce’s SAST with regard to XXE and deserialization attacks.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Wrote and tested 12 Semgrep rules for Java, Python, and Ruby for a tool run on all code reviews across Salesforce.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Caught 30 new, high-priority bugs in production code.
+                  </li>
+                </ul>
+                <h5>Summer 2020</h5>
+                <ul class = "experience">
+                  <li style = "font-family: 'Varela', serif;">
+                    Worked as part of Reference Design, Security Controls, and Architecture (REDSCAR) team focused on assisting other teams
+                    through development and maintenance of tools, documentation, and reference frameworks.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Categorized security bugs filed by Infrastructure Security Advisory team.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Collaborated with Secrets team to uncover best areas for and create automated support for secret rotation.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Integrated Vault and GUS APIs with Python script for AWS Lambda and Go program in Docker container.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Performed design review for security assessment.
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div style = "margin-bottom: 7%;">
-              <h3>Software Engineering Intern at <a href = "https://www.salesforce.com/">Salesforce</a></h3>
-              <h3 style = "margin-bottom: 3%;">(Summer 2021)</h3>
-              <ul class = "experience">
-                <li style = "font-family: 'Varela', serif;">
-                  Researched and improved Salesforce’s SAST with regard to XXE and deserialization attacks.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Wrote and tested 12 Semgrep rules for Java, Python, and Ruby for a tool run on all code reviews across Salesforce.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Caught 30 new, high-priority bugs in production code.
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">Research at <a href = "https://www.cmu.edu/">Carnegie Mellon University</a></h3>
+              <div style = "padding: 0; padding-left: 3%;">
+                <h5>Spring 2021, Fall 2021</h5>
+                <ul class = "experience">
+                  <li style = "font-family: 'Varela', serif;">
+                    Created mutation analysis-based <a href="https://github.com/saphirasnow/JQF/tree/bella">guidance plugin</a> for fuzzer <a href="https://github.com/rohanpadhye/JQF">JQF</a>.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Programmed mutation analysis functionality in Java based on <a href="http://pitest.org">PIT</a>.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Currently working toward testing mutation-guided fuzzing on large benchmarks for catching security vulnerabilities.
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div style = "margin-bottom: 7%;">
-              <h3>Student Volunteer for <a style="font-style: normal;" href = "https://s2021.siggraph.org/">SIGGRAPH</a></h3>
-              <h3 style = "margin-bottom: 3%;">(Summer 2021)</h3>
-              <ul class = "experience" style = "font-family: 'Varela', serif;">
-                <li>
-                  Performed quality assurance tests for AR/VR pieces submitted to the SIGGRAPH VR Theater.
-                </li>
-                <li>
-                  Reviewed and edited closed captioning for conference presentations.
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">Student Volunteer for <a style="font-style: normal;" href = "https://s2021.siggraph.org/">SIGGRAPH</a></h3>
+              <div style = "padding: 0; padding-left: 3%;">
+                <h5>Summer 2021</h5>
+                <ul class = "experience" style = "font-family: 'Varela', serif;">
+                  <li>
+                    Performed quality assurance tests for AR/VR pieces submitted to the SIGGRAPH VR Theater.
+                  </li>
+                  <li>
+                    Reviewed and edited closed captioning for conference presentations.
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div style = "margin-bottom: 7%;">
-              <h3>Research at <a href = "https://www.cmu.edu/">Carnegie Mellon University</a></h3>
-              <h3 style = "margin-bottom: 3%;">(2021)</h3>
-              <ul class = "experience">
-                <li style = "font-family: 'Varela', serif;">
-                  Created mutation analysis-based <a href="https://github.com/saphirasnow/JQF/tree/bella">guidance plugin</a> for fuzzer <a href="https://github.com/rohanpadhye/JQF">JQF</a>.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Programmed mutation analysis functionality in Java based on <a href="http://pitest.org">PIT</a>.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Currently working toward testing mutation-guided fuzzing on large benchmarks for catching security vulnerabilities.
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">Teaching Assistant at <a href = "https://www.cmu.edu/">Carnegie Mellon University</a></h3>
+              <div style = "padding-left: 3%">
+                <h5>Fall 2020, Fall 2021</h5>
+                <ul class = "experience">
+                  <li style = "font-family: 'Varela', serif;">
+                    TA for <a href = "http://www.math.cmu.edu/~jmackey/151_128/syll.html">15-151/21-128 Mathematical Concepts and Proofs</a>.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Teach weekly recitations, hold office hours, and grade student work.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Help undergraduate students understand and apply concepts from class, including proofs, functions, and combinatorics.
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div style = "margin-bottom: 7%;">
-              <h3>Software Engineering Intern at <a href = "https://www.salesforce.com/">Salesforce</a></h3>
-              <h3 style = "margin-bottom: 3%;">(Summer 2020)</h3>
-              <ul class = "experience">
-                <li style = "font-family: 'Varela', serif;">
-                  Worked as part of Reference Design, Security Controls, and Architecture (REDSCAR) team focused on assisting other teams
-                  through development and maintenance of tools, documentation, and reference frameworks.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Categorized security bugs filed by Infrastructure Security Advisory team.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Collaborated with Secrets team to uncover best areas for and create automated support for secret rotation.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Integrated Vault and GUS APIs with Python script for AWS Lambda and Go program in Docker container.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Performed design review for security assessment.
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">Volunteer at <a style="font-style: normal;" href = "https://searhc.org/">SEARHC</a></h3>
+              <div style = "padding: 0; padding-left: 3%;">
+                <h5>Summer 2020</h5>
+                <ul class = "experience" style = "font-family: 'Varela', serif;">
+                  <li>
+                    Put together more than 1000 COVID-19 testing kits
+                  </li>
+                  <li>
+                    Sewed masks for donation
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div style = "margin-bottom: 7%;">
-              <h3>Volunteer at <a style="font-style: normal;" href = "https://searhc.org/">SEARHC</a></h3>
-              <h3 style = "margin-bottom: 3%;">(Summer 2020)</h3>
-              <ul class = "experience" style = "font-family: 'Varela', serif;">
-                <li>
-                  Put together more than 1000 COVID-19 testing kits
-                </li>
-                <li>
-                  Sewed masks for donation
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">Software Engineering Intern at <a href = "https://www.cybercrucible.com/">Cyber Crucible</a></h3>
+              <div style = "padding: 0; padding-left: 3%;">
+                <h5>Spring 2020</h5>
+                <ul class = "experience">
+                  <li style = "font-family: 'Varela', serif;">
+                    Created Android app with voice recognition software for security authentication.
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Intetgrated AWS and REST APIs with Android app.
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div style = "margin-bottom: 7%;">
-              <h3>Software Engineering Intern at <a href = "https://www.cybercrucible.com/">Cyber Crucible</a></h3>
-              <h3 style = "margin-bottom: 3%;">(Spring 2020)</h3>
-              <ul class = "experience">
-                <li style = "font-family: 'Varela', serif;">
-                  Created Android app with voice recognition software for security authentication.
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Intetgrated AWS and REST APIs with Android app.
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">Data Analysis Intern at <a href = "http://evalulogic.com/">EvaluLogic</a></h3>
+              <div style = "padding: 0; padding-left: 3%;">
+                <h5>Summer 2019</h5>
+                <ul class = "experience">
+                  <li style = "font-family: 'Varela', serif;">
+                    Analyzed and designed over 100 Excel graphs sorting and depicting information from 2
+                    surveys of high school students regarding usage of and attitudes toward controlled substances
+                    (alcohol, tobacco, marijuana, prescription drugs).
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Formal presentation of the data to client Sitka Counseling at monthly meeting.
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div style = "margin-bottom: 7%;">
-              <h3>Data Analysis Intern at <a href = "http://evalulogic.com/">EvaluLogic</a></h3>
-              <h3 style = "margin-bottom: 3%;">(Summer 2019)</h3>
-              <ul class = "experience">
-                <li style = "font-family: 'Varela', serif;">
-                  Analyzed and designed over 100 Excel graphs sorting and depicting information from 2
-                  surveys of high school students regarding usage of and attitudes toward controlled substances
-                  (alcohol, tobacco, marijuana, prescription drugs).
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Formal presentation of the data to client Sitka Counseling at monthly meeting.
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">Volunteer Project Administrator at <a href = "https://www.kcaw.org/">Raven Radio</a></h3>
+              <div style = "padding: 0; padding-left: 3%;">
+                <h5>2017-2019</h5>
+                <ul class = "experience">
+                  <li style = "font-family: 'Varela', serif;">
+                    Wrote population and use protocols for <a href = "https://scavenger-d2fe3.firebaseapp.com/">Scavenger</a>
+                    (online database for cataloging music library) and Music Collector
+                  </li>
+                  <li style = "font-family: 'Varela', serif;">
+                    Populated over 2000 entries to Scavenger and trained volunteers
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div style = "margin-bottom: 7%;">
-              <h3>Volunteer Project Administrator at <a href = "https://www.kcaw.org/">Raven Radio</a></h3>
-              <h3 style = "margin-bottom: 3%;">(2017 - 2019)</h3>
-              <ul class = "experience">
-                <li style = "font-family: 'Varela', serif;">
-                  Wrote population and use protocols for <a href = "https://scavenger-d2fe3.firebaseapp.com/">Scavenger</a>
-                  (online database for cataloging music library) and Music Collector
-                </li>
-                <li style = "font-family: 'Varela', serif;">
-                  Populated over 2000 entries to Scavenger and trained volunteers
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">
+                Freelance Video Editor at <a href = "https://www.fineartscamp.org/">Sitka Fine Arts Camp</a>
+              </h3>
+              <div style = "padding: 0; padding-left: 3%;">
+                <h5>2018-2019</h5>
+                <ul class = "experience" style = "font-family: 'Varela', serif;">
+                  <li>
+                    Edited and finalized production videos (Seussical, Oliver, One Acts 2018, and Peter Pan)
+                    for distribution and display on the Fine Arts Camp website using Adobe Premiere Pro
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div style = "margin-bottom: 7%;">
-              <h3>
-                Freelance Video Editor at <a href = "https://www.fineartscamp.org/">Sitka Fine Arts Camp</a></h3>
-              <h3 style = "margin-bottom: 3%;">(2018 - 2019)</h3>
-              <ul class = "experience" style = "font-family: 'Varela', serif;">
-                <li>
-                  Edited and finalized production videos (Seussical, Oliver, One Acts 2018, and Peter Pan)
-                  for distribution and display on the Fine Arts Camp website using Adobe Premiere Pro
-                </li>
-              </ul>
-            </div>
-
-            <div style = "margin-bottom: 7%;">
-              <h3>Volunteer Course Instructor at <a style="font-style: normal;" href = "https://www.cityofsitka.com/government/departments/library/">Sitka Public Library</a></h3>
-              <h3 style = "margin-bottom: 3%;">(Summer 2016, 2017, 2018)</h3>
-              <ul class = "experience" style = "font-family: 'Varela', serif;">
-                <li>
-                  Designed and taught week-long workshops in
-                  Scratch, MIT App Inventor, Web Development, and Video Editing
-                </li>
-              </ul>
+              <h3 style = "margin-bottom: 2%;">Volunteer Course Instructor at <a style="font-style: normal;" href = "https://www.cityofsitka.com/government/departments/library/">Sitka Public Library</a></h3>
+              <div style = "padding: 0; padding-left: 3%;">
+                <h5>Summer 2016, 2017, 2018</h5>
+                <ul class = "experience" style = "font-family: 'Varela', serif;">
+                  <li>
+                    Designed and taught week-long workshops in
+                    Scratch, MIT App Inventor, Web Development, and Video Editing
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <h2 style = "margin-bottom: 3%;">Honors and Awards</h2>
             <ul style = "font-family: 'Varela', serif; margin-bottom: 7%;">
               <li>Carnegie Mellon University Dean's List (Fall 2019, Spring 2021)</li>
-              <li>Control Award (Alaska State FTC Competition 2019)</li>
-              <li>Technovation Semifinalist (2018)</li>
+              <li>Control Award (Alaska State <a href="https://www.firstinspires.org/robotics/ftc">FIRST Tech Challenge</a> 2019)</li>
+              <li><a href="https://technovationchallenge.org/">Technovation</a> Semifinalist (2018)</li>
               <li>National AP Scholar</li>
               <li>National Merit Finalist</li>
               <li>U.S. Presidential Scholar Semifinalist</li>
